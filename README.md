@@ -16,3 +16,4 @@ This Gym Website frontend project is designed to offer users an engaging and sea
 - **Figma:** Creating the initial design and prototype of the website.
 
 ### Website Demo
+![mel-gym](https://github.com/user-attachments/assets/047d4c2b-caac-4f84-b67a-3a4f294cb587)
