@@ -1,0 +1,444 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between links */
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5722; /* Change color on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('images/bg-home.jpeg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f8c752;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d18f00;
+}
+
+/* Ensure hero image is positioned behind content */
+.hero .image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.services {
+    padding: 60px 20px; /* Padding for top/bottom and left/right */
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center; /* Center text */
+}
+
+.section-heading {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 40px; /* Space below heading */
+    color: #333; /* Dark text color */
+}
+
+.service-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center boxes */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between boxes */
+}
+
+.service-box {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside boxes */
+    width: 300px; /* Fixed width for boxes */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.service-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.service-box img {
+    width: 100%; /* Full width for images */
+    border-radius: 10px; /* Rounded corners for images */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.service-box h2 {
+    font-size: 1.8rem; /* Subheading size */
+    margin: 15px 0; /* Space above and below subheading */
+    color: #ff5722; /* Accent color for headings */
+}
+
+.service-box p {
+    font-size: 1rem; /* Paragraph size */
+    color: #666; /* Dark gray text color */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center; 
+    font-size: 2.5em; 
+    margin-top: 20px; 
+    color: #333; 
+}
+
+/* About Section */
+.about {
+    background-color: #f4f4f4; 
+    padding: 40px 20px; 
+}
+
+/* About Container */
+.about-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+/* About Content */
+.about-content {
+    max-width: 800px; 
+    text-align: center; 
+}
+
+/* About Image */
+.about-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+
+/* Subheading */
+.about-content h2 {
+    font-size: 2em; 
+    color: #555; 
+    margin-bottom: 20px; 
+}
+
+/* Paragraphs */
+.about-content p {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+/* Celebrity Images Container */
+.celebrity-images {
+    margin-top: 40px; 
+    text-align: center; 
+}
+
+/* Celebrity Images Subheading */
+.celebrity-images h3 {
+    font-size: 1.8em; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+/* Celebrity Images Paragraph */
+.celebrity-images p {
+    font-size: 1.2em; 
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+/* Celebrity Images */
+.celebrity-image {
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin: 10px; 
+}
+
+.membership {
+    padding: 60px 20px; /* Padding for top/bottom and left/right */
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center; /* Center text for the entire section */
+}
+
+.section-heading {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 40px; /* Space below heading */
+    color: #333; /* Dark text color */
+}
+
+.membership-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center cards */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between cards */
+}
+
+.membership-card {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside cards */
+    width: 300px; /* Fixed width for cards */
+    transition: transform 0.3s; /* Animation for hover effect */
+    text-align: center; /* Center text within the card */
+}
+
+.membership-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.membership-card h2 {
+    font-size: 1.8rem; /* Subheading size */
+    margin-bottom: 15px; /* Space below subheading */
+}
+
+.price {
+    font-size: 1.5rem; /* Price size */
+    color: #ff5722; /* Accent color for price */
+    margin-bottom: 15px; /* Space below price */
+}
+
+.benefits {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-bottom: 20px; /* Space below benefits */
+    text-align: center; /* Center text for benefits list */
+}
+
+.benefits li {
+    font-size: 1rem; /* Benefit item size */
+    margin-bottom: 10px; /* Space between benefit items */
+}
+
+.btn {
+    background-color: #ff5722; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+.reviews {
+    padding: 60px 20px; /* Padding for top/bottom and left/right */
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center; /* Center text */
+}
+
+.section-heading {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 40px; /* Space below heading */
+    color: #333; /* Dark text color */
+}
+
+.review-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center cards */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between cards */
+}
+
+.review-card {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside cards */
+    width: 300px; /* Fixed width for cards */
+    transition: transform 0.3s; /* Animation for hover effect */
+    text-align: center; /* Center text within the card */
+}
+
+.review-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.review-image {
+    width: 300px; /* Fixed width for user images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.review-card h3 {
+    font-size: 1.5rem; /* Subheading size */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.review-card p {
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.5; /* Line height for readability */
+    color: #666; /* Dark gray text color */
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form .btn {
+    padding: 10px 20px;
+    background-color: #0050f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #d18f00;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for top/bottom */
+    position: relative; /* Positioning context */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Font size for copyright text */
+}
